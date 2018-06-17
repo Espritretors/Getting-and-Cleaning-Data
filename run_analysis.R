@@ -65,4 +65,4 @@ names(finaldata)<-gsub("^t", "time", names(finaldata))
 names(finaldata)<-gsub("^f", "frequency", names(finaldata))
 
 #Writes the tidy data set in txt file
-write.table(finaldata, file = "./tidy_data.txt")
+write.table(finaldata, file = "./tidy_data.txt", row.name=FALSE)
